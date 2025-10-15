@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+APScheduler
+mysql-connector-python
+gspread
+google-api-python-client
+ultralytics
+aiofiles
+skyfield
+japanize_matplotlib
+oauth2client
+opencv-python-headless>=4.5.0
+numpy
+pillow

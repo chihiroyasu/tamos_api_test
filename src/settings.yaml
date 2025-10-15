@@ -1,0 +1,48 @@
+devices:
+  availableDevices: ["livee", "bushitsu", "1go", "2go", "3go", "4go", "5go"]
+  deviceNameTold: {
+    "livee": "10",
+    "bushitsu": "11",
+    "1go": "201",
+    "2go": "202",
+    "3go": "203",
+    "4go": "204",
+    "5go": "205",
+  }
+
+origins:
+  allowOrigins: [
+    "http://localhost:3000",
+    "http://toms-server.tail2925.ts.net",
+  ]
+
+searchImage:
+  daytimeSkytreeDir: "/mnt/data/201"
+  daytimeFujiDir: "/mnt/data/203/bigdata"
+  nightFujiDir: "/mnt/data/203/night"
+  notFound: "./imageNotFound.jpg"
+  
+base_path:
+        failed: "/mnt/data/not_found.jpg"
+        まとめ画像(スカイツリー方面):
+            year: "/mnt/data/narabe1/{year}/*"
+            month: "/mnt/data/narabe1/{year}/dst_{year}-{month}.png"
+        
+        壱号機(スカイツリー方面):
+            month_day_time: "/mnt/data/201/{year}/{month}/{year}{month}{day}-{time}*"
+            month_day: "/mnt/data/201/{year}/{month}/{year}{month}{day}-*"
+            month_time: "/mnt/data/201/{year}/{month}/*-{time}*"
+            month: "/mnt/data/201/{year}/{month}/*"
+            day_time: "/mnt/data/201/{year}/**/{year}*{day}-{time}*"
+            day: "/mnt/data/201/{year}/**/{year}*{day}*"
+            time: "/mnt/data/201/{year}/**/{year}*-{time}*"
+
+        参号機(富士山方面): 
+            month_day_time: "/mnt/data/203/bigdata/{year}/{month}/{year}{month}{day}-{time}*"
+            month_day: "/mnt/data/203/bigdata/{year}/{month}/{year}{month}{day}-*"
+            month_time: "/mnt/data/203/bigdata/{year}/{month}/*-{time}*"
+            month: "/mnt/data/203/bigdata/{year}/{month}/*"
+            day_time: "/mnt/data/203/bigdata/{year}/**/{year}*{day}-{time}*"
+            day: "/mnt/data/203/bigdata/{year}/**/{year}*{day}*"
+            time: "/mnt/data/203/bigdata/{year}/**/{year}*-{time}*"
+  

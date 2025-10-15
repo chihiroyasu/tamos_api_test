@@ -1,0 +1,8 @@
+[24-11-15 23:13:20] Traceback (most recent call last):
+  File "/home/user/toms-server/tamc/services/backend/manualObs/getSunImage/getSunImage.py", line 82, in <module>
+    year = time.strftime("%Y")
+NameError: name 'time' is not defined
+[24-11-15 23:14:10] Traceback (most recent call last):
+  File "/home/user/toms-server/tamc/services/backend/manualObs/getSunImage/getSunImage.py", line 82, in <module>
+    year = time.strftime("%Y")
+NameError: name 'time' is not defined
